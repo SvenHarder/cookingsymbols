@@ -35,7 +35,7 @@ makeindex -s gind.ist -o cookingsymbols.ind cookingsymbols.idx
   {{{
 pdflatex cookingsymbols.dtx
   }}}
-  compiles the complete documentation.
+  compiles the complete documentation. Rerun this command in order to update the table of contents.
 
 == METAFONT ==
   * The command
