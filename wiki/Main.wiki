@@ -6,23 +6,48 @@ This page collects several information for developing this package. Currently it
 = Generating of files =
 The following steps are required in that order to generate all files based on the files *cookingsymbols.ins* and *cookingsymbols.dtx*
 
-== STY ==
+== !DocStrip Utility ==
+The command
+{{{
 latex cookingsymbols.ins
+}}}
+generates the METAFONT file `cookingsymbols.mf` and the style package file `cookingsymbols.sty`.
 
-== Glossary ==
-makeindex -s gglo.ist -o cookingsymbols.gls cookingsymbols.glo
-
-== Index ==
-makeindex -s gind.ist -o cookingsymbols.ind cookingsymbols.idx
 
 == Documentation ==
+  * The command
+  {{{
 pdflatex cookingsymbols.dtx
+  }}}
+  creates the glossary and index files `cookingsymbols.idx` and `cookingsymbols.glo` and a (temporary) PDF documentation. It does not contain a glossary and an index if it is the first run.
+  
+  * The command
+  {{{
+makeindex -s gglo.ist -o cookingsymbols.gls cookingsymbols.glo
+  }}}
+  builds the glossary style file `cookingsymbols.gls`.
+  * The command
+  {{{
+makeindex -s gind.ist -o cookingsymbols.ind cookingsymbols.idx
+  }}}
+  provides the index style file `cookingsymbols.ind`.
+  * The command
+  {{{
+pdflatex cookingsymbols.dtx
+  }}}
+  compiles the complete documentation.
 
-== METAFONT file ==
+== METAFONT ==
+  * The command
+  {{{
 mf.exe cookingsymbols.mf
-
-== DVI ==
+  }}}
+  generates the file `cookingsymbols.2602gf`.
+  * The command
+  {{{
 gftodvi cookingsymbols.2602gf
+  }}}
+  converts the previously generated file and saves it to the file `cookingsymbols.dvi`.
 
 
 = Paths for generated files =
