@@ -1,0 +1,33 @@
+#summary Collection of developing information and tools
+= Introduction =
+
+This page collects several information for developing this package. Currently it does not contain any user related data.
+
+= Generating of files =
+The following steps are required in that order to generate all files based on the files *cookingsymbols.ins* and *cookingsymbols.dtx*
+
+== STY ==
+latex cookingsymbols.ins
+
+== Glossary
+makeindex -s gglo.ist -o cookingsymbols.gls cookingsymbols.glo
+
+== Index ==
+makeindex -s gind.ist -o cookingsymbols.ind cookingsymbols.idx
+
+== Documentation ==
+pdflatex cookingsymbols.dtx
+
+== METAFONT file ==
+mf.exe cookingsymbols.mf
+
+== DVI ==
+gftodvi cookingsymbols.2602gf
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
