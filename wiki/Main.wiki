@@ -29,13 +29,13 @@ gftodvi cookingsymbols.2602gf
 If you are using Windows 7 and MikTeX the new files have to be stored at and therefore updated at the following paths.
 
 == .pk ==
-C:\Users\`<`UserName`>`\AppData\Local\MikTeX\2.9\fonts\pk\ljfour\public\cookingsymbols
+`C:\Users\<UserName>\AppData\Local\MikTeX\2.9\fonts\pk\ljfour\public\cookingsymbols`
 
 == .mf (and .gen) ==
-C:\Users\`<`UserName`>`\AppData\Roaming\MikTeX\2.9\fonts\source\public\cookingsymbols
+`C:\Users\<UserName>\AppData\Roaming\MikTeX\2.9\fonts\source\public\cookingsymbols`
 
 == .sty and .fd ==
-C:\Users\`<`UserName`>`\AppData\Roaming\MikTeX\2.9\tex\latex\cookingsymbols
+`C:\Users\<UserName>\AppData\Roaming\MikTeX\2.9\tex\latex\cookingsymbols`
 
 == .tfm ==
-C:\Users\`<`UserName`>`\AppData\Roaming\MikTeX\2.9\fonts\tfm\public\cookingsymbols
+`C:\Users\<UserName>\AppData\Roaming\MikTeX\2.9\fonts\tfm\public\cookingsymbols`
