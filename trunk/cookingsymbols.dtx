@@ -1,6 +1,6 @@
 % \iffalse meta-comment
 %
-% Copyright (C) 2011 by Sven Harder
+% Copyright (C) 2014 by Sven Harder
 % -----------------------------------
 %
 % This file may be distributed and/or modified under the
@@ -15,7 +15,7 @@
 %
 % This work has the LPPL maintenance status `maintained'.
 % 
-% The Current Maintainer of this work is Sven Harder.
+% The current maintainer of this work is Sven Harder.
 %
 % This work consists of the files cookingsymbols.dtx and cookingsymbols.ins
 % and the derived files cookingsymbols.sty and cookingsymbols.mf.
@@ -25,7 +25,7 @@
 % \iffalse
 %<package>\NeedsTeXFormat{LaTeX2e}
 %<package>\ProvidesPackage{cookingsymbols}
-%<package>[2011/11/02 v1.0 symbols for recipes by Sven Harder]
+%<package>[2014/12/28 v1.1 symbols for recipes by Sven Harder]
 %
 %<*driver>
 \documentclass{ltxdoc}
@@ -38,6 +38,18 @@
 \CodelineIndex
 \RecordChanges
 \addtolength{\oddsidemargin}{-1cm}
+\setcounter{IndexColumns}{2}
+\setcounter{GlossaryColumns}{2}
+\usepackage{hyperref}
+\hypersetup{%
+    pdfauthor = {Sven Harder},
+    pdftitle = {cookingsymbols documentation},
+    colorlinks = {true},
+    linkcolor = {blue},
+    urlcolor = {blue},
+    citecolor = {blue},
+    filecolor = {blue}
+}
 \begin{document}
     \DocInput{cookingsymbols.dtx}
 \end{document}
@@ -64,6 +76,7 @@
 %
 %
 % \changes{v1.0}{2011/11/02}{Initial version}
+% \changes{v1.1}{2014/12/28}{Update of the documentation}
 %
 % \GetFileInfo{cookingsymbols.sty}
 %
@@ -79,6 +92,17 @@
 % \author{Sven Harder \\ \texttt{sven\_one1@gmx.de}}
 %
 % \maketitle
+% \begin{abstract}
+%  This package is intended to support mainly developers of recipe templates with often used symbols. The symbols are build by using \MF.
+% \end{abstract}
+%
+% \vspace{3em}
+%
+% \PrintChanges
+%
+% \newpage
+% \tableofcontents
+% \newpage
 %
 % \section{Introduction}
 %  This package includes 11 symbols. They are original created, when I was searching for symbols for typesetting recipes. However, I didn't find any symbols, so I decided to create my own ones. This is the result ;)
@@ -106,7 +130,7 @@
 %  \end{center}
 %  And now have fun with these new symbols!
 %
-% \StopEventually{\PrintIndex}
+% \StopEventually{\PrintIndex\addcontentsline{toc}{section}{\indexname}}
 %
 % \section{Implementation}
 %
